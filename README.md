@@ -153,3 +153,61 @@ x = memoryview(bytes(5))	                                   memoryview
 
 6.
 
+
+25/03/24
+Python supports the usual logical conditions from mathematics:
+
+Equals: a == b
+Not Equals: a != b
+Less than: a < b
+Less than or equal to: a <= b
+Greater than: a > b
+Greater than or equal to: a >= b
+
+
+Elif
+The elif keyword is Python's way of saying "if the previous conditions were not true, then try this condition".
+ex-
+a = 33
+b = 33
+if b > a:
+  print("b is greater than a")
+elif a == b:
+  print("a and b are equal")
+                In this example a is equal to b, so the first condition is not true, but the elif condition is true, so we print to screen that "a and b are equal".
+
+and lastly the "else" - it is the last option, it should not any condtion.
+if no above condition in code is satisfied then this "else" works.
+ex-
+a = 200
+b = 33
+if b > a:
+  print("b is greater than a")
+elif a == b:
+  print("a and b are equal")
+else:
+  print("a is greater than b")
+
+ultimately the conclusion is, "if" and "elif" can have conditions but not "else"
+
+Short Hand If ... Else
+If you have only one statement to execute, one for if, and one for else, you can put it all on the same line:
+ex-
+a = 2
+b = 330
+print("A") if a > b else print("B")
+
+Nested If
+You can have if statements inside if statements, this is called nested if statements.
+ex- 
+x = 41
+
+if x > 10:
+  print("Above ten,")
+  if x > 20:
+    print("and also above 20!")
+  else:
+    print("but not above 20.")
+
+The while Loop
+With the while loop we can execute a set of statements as long as a condition is true.
